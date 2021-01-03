@@ -2,7 +2,7 @@
 // pngulangan pada array
 // for / foreach
 
-$angka = [1,2,3,4,3,1,2,2,1,13,1,1];
+$angka = [1,2,3,4,5];
 
 ?>
 <!DOCTYPE html>
@@ -28,19 +28,19 @@ $angka = [1,2,3,4,3,1,2,2,1,13,1,1];
 </head>
 <body>
     <?php for($i = 0; $i < count($angka); $i++) { ?>
-    <div class="div"><?php echo $angka[$i];?></div>
+    <div class="div"><?= $angka[$i];?></div>
     <?php } ?>
 
         <div class="clear"></div>
 
     <?php foreach( $angka as $a) { ?>
-        <div class="div"><?php echo $a; ?></div>
+        <div class="div"><?= $a; ?></div>
     <?php }?>
 
         <div class="clear"></div>
-
+<!-- recommend -->
     <?php foreach($angka as $a) :  ?>
-        <div class="div"><?php echo $a; ?></div>
+        <div class="div"><?= $a; ?></div>
     <?php endforeach; ?>
 
 </body>

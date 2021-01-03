@@ -2,7 +2,6 @@
     function salam($waktu = "Datang", $nama = "Admin"){
         return "Selamat $waktu, $nama!";
     }
-
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -12,6 +11,6 @@
     <title>Document</title>
 </head>
 <body>
-    <h1><?= salam("Pagi"); ?></h1>
+    <h1><?= salam("Tidur", "Hendri"); ?></h1>
 </body>
 </html>

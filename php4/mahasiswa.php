@@ -1,6 +1,6 @@
 <?php 
 
-$mahasiswa =[ ["Sandikha Galih","03020302","Teknik Informatika","Asphyxia@gmail.com"], ["Sandikha Galih","03020302","Teknik Informatika","Asphyxia@gmail.com"]];
+$mahasiswa =[ ["Sandikha Galih","03020302","Teknik Informatika","Asphyxia@gmail.com"], ["Galih","03020302","Teknik Informatika","Asphyxia@gmail.com"]];
 
 
 ?>
@@ -15,18 +15,13 @@ $mahasiswa =[ ["Sandikha Galih","03020302","Teknik Informatika","Asphyxia@gmail.
 <body>
     <h1>Daftar Mahasiswa</h1>
 
-    <!-- <ul>
-        <?php foreach($mahasiswa as $ms ) : ?>
-            <li><?= $ms; ?></li>
-        <?php endforeach; ?>
-    </ul> -->
-<?php foreach($mahasiswa as $ms) : ?>
-    <ul>
+    <?php foreach($mahasiswa as $ms) : ?>
+        <ul>
         <li>Nama :   <?= $ms[0] ?></li>
         <li>NRP : <?= $ms[1] ?></li>
         <li>Jurusan : <?= $ms[2] ?></li>
         <li>Email : <?= $ms[3] ?></li>
     </ul>
-<?php endforeach; ?>
+    <?php endforeach; ?>
 </body>
 </html>

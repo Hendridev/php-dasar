@@ -2,12 +2,11 @@
 
 <?php
 // date untuk tanggal dan format tertentu
-// print date("l, d-M-Y");
-
-
+print date("l, d-M-Y");
+print "<br>";
 // time
 // UNIX Timestamp / EPOCH time
-// print time();
+print time() / 3600 / 24;
 
 // echo date("d M Y",time()-172800*50);
 

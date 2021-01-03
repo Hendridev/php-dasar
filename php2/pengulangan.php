@@ -6,7 +6,7 @@
     <title>Document</title>
 </head>
 <body>
-    <!-- <table border="1" cellpadding="10" cellspacing="0">
+    <table border="1" cellpadding="10" cellspacing="0">
     <?php 
     
     for($i = 1; $i <= 3; $i++){
@@ -18,8 +18,8 @@
     }
     
     ?>
-    </table> -->
-    <!-- <table border="1" cellpadding="10" cellspacing="0">
+    </table>
+   <table border="1" cellpadding="10" cellspacing="0">
     <?php 
     for($i = 1; $i <= 10; $i++) : ?>
         <tr>
@@ -28,7 +28,7 @@
             <?php endfor; ?>
         </tr>
     <?php endfor; ?>
-    </table> -->
+    </table>
 
 
 </body>

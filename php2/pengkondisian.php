@@ -14,7 +14,7 @@
 //     print "Salah <br>";
 // }
 
-// $x = 101;
+// $x = 100;
 // if($x < 70){
 //     print "Benar";
 // }
@@ -24,9 +24,5 @@
 // else{
 //     print "salah";
 // }
-
-
-
-
 
 ?>
