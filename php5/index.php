@@ -1,15 +1,15 @@
 <?php 
 
-// // array 
-// // membuat array
-// $bulan = ["Jan","Feb","Mar"];
-// $hari = ["Senin","Selasa","Rabu"];
-// $arr = [123,true,"false"];
-// // menampilkan array
-// // ver debugg
+// array 
+// membuat array
+$bulan = ["Jan","Feb","Mar"];
+$hari = ["Senin","Selasa","Rabu"];
+$arr = [123,true,"false"];
+// menampilkan array
+// ver debugg
 // var_dump($arr);
-// print_r($arr);
-// // ver user
+print_r($arr);
+// ver user
 // echo $arr[0];
 ?>
 
@@ -22,13 +22,16 @@
     <style>
         .kotak{
             text-align: center;
-            height: 30px;
-            width: 30px;
+            height: 80px;
+            width: 80px;
             background-color: darkslateblue;
             line-height: 30px;
             float: left;
             color: white;
             margin: 2px;
+            display: flex;
+            justify-content : center;
+            align-items : center;
         }
         .kotak:hover{
             transform: rotate(360deg);
@@ -42,15 +45,14 @@
 </head>
 <body>
 <?php 
-    $angka = [[1,2,3],[4,5,6],[7,8,9]];
-    // print $angka[2][2];  //print angka 9;
+    $angka = [[1,2,3],[4,5,6],[7,8,9],[10,11,12]];
+    print $angka[2][2];  //print angka 9;
 ?>
 
 <?php foreach($angka as $ang) : ?>
     <?php foreach($ang as $num) : ?>
     <div class="kotak"><?php echo $num ?></div>
     <?php endforeach; ?>
-
     <div class="clear"></div>
     
 <?php endforeach; ?>

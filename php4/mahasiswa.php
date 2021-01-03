@@ -16,7 +16,7 @@ $mahasiswa =[ ["Sandikha Galih","03020302","Teknik Informatika","Asphyxia@gmail.
     <h1>Daftar Mahasiswa</h1>
 
     <?php foreach($mahasiswa as $ms) : ?>
-        <ul>
+    <ul>
         <li>Nama :   <?= $ms[0] ?></li>
         <li>NRP : <?= $ms[1] ?></li>
         <li>Jurusan : <?= $ms[2] ?></li>

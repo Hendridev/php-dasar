@@ -8,10 +8,15 @@
 <body>
 
 <?php if( isset($_POST["submit"]) ) : ?>
-    <h1>Hallo Selamat Datang, <?= $_POST["nama"];  ?></h1>
+    <?php if(!empty($_POST["nama"])  && !empty($_POST["username"])) : ?>
+    <li>username : <?= $_POST["username"];?></li>
+    <h1>Hallo Selamat Datang, <?= $_POST["nama"];?></h1>
+    <?php endif ;?>
 <?php endif; ?>
-    <form action="" method="post">
-        <input type="text" name="nama">
+    <form action="form2.php" method="post">
+        <input type="text" name="nama" placeholder="nama">
+        <br>
+        <input type="text" name="username" placeholder="username">
         <br>
         <button type="submit" name="submit">Kirim</button>
     </form>

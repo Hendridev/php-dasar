@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,6 +7,11 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Selamat datang, <?= $_POST["nama"]; ?></h1>
+<?php if( isset($_POST["submit"]) ) : ?>
+    <?php if(!empty($_POST["nama"])  || !empty($_POST["username"])) : ?>
+        <li>username : <?= $_POST["username"];?></li>
+        <h1>Selamat datang, <?= $_POST["nama"]; ?></h1>
+        <?php endif ;?>
+    <?php endif; ?>
 </body>  
 </html>

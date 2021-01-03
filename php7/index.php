@@ -1,10 +1,10 @@
 <?php 
 require 'functions.php';
 
+// ambil data dari tabel mahasiswa
 $mahasiswa = query("SELECT * FROM mahasiswa");
-// // ambil data dari tabel mahasiswa
 // $result = mysqli_query($db,"SELECT * FROM mahasiswa");
-// // var_dump($result);
+// var_dump($result);
 
 // // ambil data (fetch) mahasiswa dari object result
 // // mysqli_fetch_row() //mengembalikan array numerik

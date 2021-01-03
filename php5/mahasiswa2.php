@@ -1,17 +1,16 @@
 <?php 
-    
+    // array with number
 // $mahasiswa =[ ["Sandikha Galih","03020302","Teknik Informatika","Asphyxia@gmail.com"],
 //               ["Sandikha Galih","03020302","Teknik Informatika","Asphyxia@gmail.com"]];
 
-// array associative
+// array associative one self
 // $mahasiswa = [  "nama" => "Sandikha", 
 //                 "nrp" => "0213213",
 //                 "jurusan" => "Teknik Informatika",
 //                 "email" => "hendrids@gmail.com"];
-// menampilkan isi
+// menampilkan isi dengan deklarasi nama data
 // echo $mahasiswa["nama"];
-
-// aray baru
+// aray baru =>
 
 $mahasiswa = [["nama" => "Sandikha", 
                 "nrp" => "0213213",
@@ -24,7 +23,6 @@ $mahasiswa = [["nama" => "Sandikha",
                 "jurusan" => "Teknik Informatika",
                 "email" => "hendrids@gmail.com",
                 "gambar" => "foto_mahasiswa.png"
-                // "tugas" => [90,80,100]],
                 ],
 
                 ["nama" => "Burhan", 
@@ -35,10 +33,6 @@ $mahasiswa = [["nama" => "Sandikha",
             ];
 // array di dalam array di dalam array
 // echo $mahasiswa[1]["tugas"][1];
-
-
-
-
 ?>
 
 <!DOCTYPE html>

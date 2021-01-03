@@ -1,8 +1,11 @@
 <?php 
-// cek tombol submit
+    session_start();
+    // cek tombol submit
     if(isset($_POST["submit"])){
 // cek username & password
     if($_POST["username"] =="admin" && $_POST["password"] =="login"){
+// make session
+    $_SESSION["login"] = true;
 // benar, tampilkan hal admin
     header("location:admin.php");
     exit;
@@ -12,6 +15,7 @@
     $error = true;
 }
     }
+    var_dump($_SESSION);
 ?>
 
 
@@ -24,13 +28,14 @@
 </head>
 <body>
     <h1>Login Admin</h1>
+    <p><?php echo $log?></p>
 <?php  if (isset($_POST['submit'])) : ?>
     <?php if (isset($error)) : ?>
-    <p style="color: red;">Username / pass salah </p>
-<?php endif; ?>
-<?php if(empty($_POST["username"])||empty($_POST["password"])) : ?>
-    <p style="color: red;">Username / password kosong</p>
-<?php endif ?>
+        <?php $log = "pass atau username salah"; ?>
+    <?php endif; ?>
+    <?php if(empty($_POST["username"])||empty($_POST["password"])) : ?>
+        <?php $log = "pass atau username kosong"; ?>
+    <?php endif ?>
 <?php endif; ?>
 
     <ul>
