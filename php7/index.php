@@ -41,7 +41,7 @@ $mahasiswa = query("SELECT * FROM mahasiswa");
         <?php $i = 1;?>
         <?php foreach($mahasiswa as $row) : ?>
         <tr>
-            <td><?= $i; ?></td>
+            <td><?= $i++; ?></td>
             <td><a href="">Ubah</a> | <a href="">Hapus</a></td>
             <td><img src="img/ancient.png" alt="" width="25px"></td>
             <td><?= $row["nrp"]; ?></td>

@@ -1,4 +1,5 @@
 <?php 
+// tanpa function, tidak oop
 //  koneksi ke database
 $db = mysqli_connect("localhost","root","", "phpdasar");
 
@@ -42,8 +43,8 @@ $result = mysqli_query($db,"SELECT * FROM mahasiswa");
         <?php $i = 1;?>
         <?php while( $row = mysqli_fetch_assoc($result)) : ?>
         <tr>
-            <td><?= $i; ?></td>
-            <td><a href="">Ubah</a> | <a href="">Hapus</a></td>
+            <td><?= $i++; ?></td>
+            <td><a href="">Ubah</a> | <a href="hapus.php?id=<?=$row["id"];?>">Hapus</a></td>
             <td><img src="img/ancient.png" alt="" width="25px"></td>
             <td><?= $row["nrp"]; ?></td>
             <td><?= $row["nama"];?></td>
@@ -53,5 +54,6 @@ $result = mysqli_query($db,"SELECT * FROM mahasiswa");
         <?php endwhile; ?>
         <?php $i++ ?>
     </table>
+    <script src="script.js"></script>
 </body>
 </html>
