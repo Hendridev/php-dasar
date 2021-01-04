@@ -19,12 +19,10 @@ function tambah($data){
     $nama = htmlspecialchars($data["nama"]);
     $email = htmlspecialchars($data["email"]);
     $jurusan = htmlspecialchars($data["jurusan"]);
-    $gambar = htmlspecialchars($data["gambar"]);
 
-    $query = "INSERT INTO mahasiswa
+    $query = "INSERT INTO mahasiswa (nrp,nama,email,jurusan)
     VALUES
-    ('','$nama','$nrp','$email','$jurusan','$gambar')
-    ";
+    ('$nrp','$nama','$email','$jurusan')";
 
     mysqli_query($db,$query);
 

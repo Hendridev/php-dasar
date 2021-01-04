@@ -26,13 +26,13 @@ if(isset($_POST["cari"])){
 <!-- mencari data/ search link -->
     <form action="" method="POST">
 
-    <input type="text" name="keyword" size="40" autofocus placeholder="masukan keyword" autocomplete="off">
-    <button type="submit" name="cari">Cari</button>
+    <input type="text" class="keyword" name="keyword" size="40" autofocus placeholder="masukan keyword" autocomplete="off">
+    <button type="submit" name="cari" class="cari">Cari</button>
 
     </form>
     <br>
 
-
+<div class="container">
     <table border="1" cellpadding="10" cellspacing="0">
 
         <tr>
@@ -61,5 +61,7 @@ if(isset($_POST["cari"])){
         <?php $i++; ?>
         <?php endforeach; ?>
     </table>
+</div>
+    <script src="js/script.js"></script>
 </body>
 </html>

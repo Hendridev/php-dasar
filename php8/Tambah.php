@@ -75,10 +75,6 @@ if(isset($_POST["submit"])){
                 <input type="text" name="jurusan" id="jurusan" required>
             </li>
             <li>
-                <label for="gambar">Gambar</label>
-                <input type="text" name="gambar" id="gambar" required>
-            </li>
-            <li>
                 <button type="submit" name="submit">Tambah Data</button>
             </li>
         </ul>

@@ -21,11 +21,10 @@ function tambah($data){
     $jurusan = htmlspecialchars($data["jurusan"]);
     $gambar = htmlspecialchars($data["gambar"]);
 
-    $query = "INSERT INTO mahasiswa
+    $query = "INSERT INTO mahasiswa (nrp,nama,email,jurusan,gambar)
     VALUES
-    ('','$nama','$nrp','$email','$jurusan','$gambar')
+    ('$nrp','$nama','$email','$jurusan','$gambar')
     ";
-
     mysqli_query($db,$query);
 
     return mysqli_affected_rows($db);

@@ -44,7 +44,7 @@ $result = mysqli_query($db,"SELECT * FROM mahasiswa");
         <?php while( $row = mysqli_fetch_assoc($result)) : ?>
         <tr>
             <td><?= $i++; ?></td>
-            <td><a href="">Ubah</a> | <a href="hapus.php?id=<?=$row["id"];?>">Hapus</a></td>
+            <td><a href="ubah.php?id=<?=$row["id"] ?>">Ubah</a> | <a href="hapus.php?id=<?=$row["id"];?>">Hapus</a></td>
             <td><img src="img/ancient.png" alt="" width="25px"></td>
             <td><?= $row["nrp"]; ?></td>
             <td><?= $row["nama"];?></td>
@@ -52,8 +52,8 @@ $result = mysqli_query($db,"SELECT * FROM mahasiswa");
             <td><?= $row["jurusan"]; ?></td>
         </tr>
         <?php endwhile; ?>
-        <?php $i++ ?>
     </table>
+    <a href="tambahdata.php">tambah_data</a>
     <script src="script.js"></script>
 </body>
 </html>

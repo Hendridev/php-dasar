@@ -1,9 +1,9 @@
 <?php 
-session_start();
-if(!isset($_SESSION["login"])){
-    header("location: login.php");
-    exit;
-}
+// session_start();
+// if(!isset($_SESSION["login"])){
+//     header("location: login.php");
+//     exit;
+// }
 require 'functions.php';
  
 $mahasiswa = query("SELECT * FROM mahasiswa ORDER BY id DESC");
